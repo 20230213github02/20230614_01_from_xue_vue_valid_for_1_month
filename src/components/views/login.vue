@@ -51,7 +51,7 @@ const errorMessage = ref('')
 
 const login = () => {
   axios// 向服务器发送登录请求，サーバへのログイン要求の送信
-    .post('http://localhost:8080/user/login', {
+    .post('http://localhost:8091/user/login', {
       name: username.value,
       password: password.value,
     })// 页面跳转到欢迎页，ページがウェルカムページにジャンプ
@@ -65,7 +65,7 @@ const login = () => {
     })
 
   axios
-    .post('http://localhost:8080/kanli/login', {
+    .post('http://localhost:8091/kanli/login', {
       name: username.value,
       password: password.value,
     })

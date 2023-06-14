@@ -77,7 +77,7 @@ export default {
       };
 
       axios
-        .post("http://localhost:8080/xingui/queren", this.formData)
+        .post("http://localhost:8091/xingui/queren", this.formData)
         .then(() => {
           // 处理保存成功的逻辑
           console.log("22222"+this.formData.aPLShinseisyaName); 

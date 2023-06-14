@@ -162,7 +162,7 @@ export default {
     },
     fetchData() {
       axios
-        .get('http://localhost:8080/news/applications')
+        .get('http://localhost:8091/news/applications')
         .then((response) => {
           this.tableData = response.data;
         })
@@ -171,7 +171,7 @@ export default {
         });
 
       axios
-        .get('http://localhost:8080/newspaper/balls')
+        .get('http://localhost:8091/newspaper/balls')
         .then((response) => {
           this.newsData = response.data;
           this.newsTableData = response.data;
